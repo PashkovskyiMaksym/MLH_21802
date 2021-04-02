@@ -12,7 +12,7 @@ const age = {
     "default": "1234567890"
 }
 
-const story = {
+const storyTypes = {
     "overcomingTheMonster": 0,
     "rebirth": 1,
     "quest": 2,
@@ -30,4 +30,9 @@ const labels = {
     "image": 4
 }
 
-module.exports = {name, gender, age, story, labels};
+const story = {
+    "storyBody": 0,
+    "moral": 1
+}
+
+module.exports = {name, gender, age, storyTypes, labels, story};

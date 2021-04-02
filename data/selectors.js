@@ -6,13 +6,14 @@ const elements = {
     "radioButtons": ".ant-radio",
     "radioButtonsLabel": ".ant-radio-wrapper",
     "age": "#age",
-    "storyType": ".ant-select-selector",
+    "story": ".ant-select-selector",
     "storyList": ".ant-select-item",
     "imageLabel": ".ant-form-item-label",
     "image": "span.ant-upload",
     "submit": ".ant-btn",
     "tryAgain": ".btn-primary",
-    "errorMessage": ".ant-form-item-explain"
+    "errorMessage": ".ant-form-item-explain",
+    "storyText": ".card-text"
 }
 
 module.exports = elements;
