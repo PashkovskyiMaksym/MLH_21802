@@ -2,8 +2,8 @@ exports.config = {
     runner: 'local',
 
     specs: [
-        './test/smoke/*.js',
-        //'./test/extended/*.js'
+        // './test/smoke/*.js',
+        './test/extended/*.js'
     ],
     exclude: [
        //'./test/smoke/elementsExist*.js',
@@ -18,7 +18,7 @@ exports.config = {
         acceptInsecureCerts: true
     }],
 
-    logLevel: 'info',
+    logLevel: 'silent',
 
     bail: 0,
 
