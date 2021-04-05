@@ -1,5 +1,5 @@
 import sel from '../../data/selectors';
-import {gender} from '../../data/testData';
+import {gender, storyTypes, name, age} from '../../data/testData';
 import {genderRun} from "../../helpers/methods";
 
 describe('Gender field testing', function () {
@@ -93,6 +93,18 @@ describe('Gender field testing', function () {
             $$(sel.radioButtons)[gender.she].click();
             let buttonHe = genderRun(gender.he, sel.radioBtnHe);
             expect(buttonHe).toEqual(true);
+        });
+    });
+
+    describe('Negative testing', function () {
+
+        it.only('TC-054. Not chosen any button in the gender field', function () {
+            $(sel.name).setValue(name.default);
+            $(sel.age).setValue(age.default);
+            $(sel.story).click();
+            $$(sel.storyList)[storyTypes.comedy].click();
+            let submitBtn = $(sel.submit).isEnabled();
+            expect(submitBtn).toEqual(false);
         });
     });
 });
