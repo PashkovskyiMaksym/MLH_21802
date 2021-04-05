@@ -98,7 +98,7 @@ describe('Gender field testing', function () {
 
     describe('Negative testing', function () {
 
-        it.only('TC-054. Not chosen any button in the gender field', function () {
+        it('TC-054. Not chosen any button in the gender field', function () {
             $(sel.name).setValue(name.default);
             $(sel.age).setValue(age.default);
             $(sel.story).click();
