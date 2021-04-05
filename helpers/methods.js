@@ -16,4 +16,10 @@ function inputValues4Submit(name, gender, age, story){
     $$(sel.storyList)[story].click();
     $(sel.submit).click();
 }
-module.exports = {inputValues4, inputValues4Submit};
+
+function genderRun(gender, button){
+    $$(sel.radioButtons)[gender].click();
+    return  $(button).isSelected();
+}
+
+module.exports = {inputValues4, inputValues4Submit, genderRun};

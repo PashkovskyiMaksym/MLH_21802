@@ -13,7 +13,10 @@ const elements = {
     "submit": ".ant-btn",
     "tryAgain": ".btn-primary",
     "errorMessage": ".ant-form-item-explain",
-    "storyText": ".card-text"
+    "storyText": ".card-text",
+    "radioBtnHe": "input[type='radio'][class='ant-radio-input'][value='he']",
+    "radioBtnShe": "input[type='radio'][class='ant-radio-input'][value='she']",
+    "radioBtnIt": "input[type='radio'][class='ant-radio-input'][value='it']"
 }
 
 module.exports = elements;
