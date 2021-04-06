@@ -36,14 +36,23 @@ const story = {
 }
 
 const images = {
-    "jpeg2": '../data/photos/jpeg2Mb.jpeg'
+    "jpeg2": '../data/photos/jpeg2Mb.jpeg',
+    "jpeg3.9": "../data/photos/jpeg3.9Mb.jpeg",
+    "jpeg4": "../data/photos/jpeg4Mb.jpeg",
+    "png2": "../data/photos/png2Mb.png",
+    "png3.9": "../data/photos/png2Mb.png",
+    "png4": "../data/photos/png2Mb.png",
+    "pdf": "../data/photos/pdf.pdf",
+    "bmp": "../data/photos/bmp.bmp",
+    "gif": "../data/photos/gif.gif",
+    "pptx": "../data/photos/pptx.pptx",
+    "svg": "../data/photos/svg.svg",
+    "square": "../data/photos/square.jpeg"
 }
 
 const caseType = {
     "positive": "positive",
     "negative": "negative"
 }
-
-
 
 module.exports = {name, gender, age, storyTypes, labels, story, images, caseType};
