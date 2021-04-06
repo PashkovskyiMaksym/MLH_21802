@@ -34,4 +34,12 @@ function collapsedDropdown (storyT){
     return $(sel.dropDownMenu).isDisplayed();
 }
 
-module.exports = {inputValues4, inputValues4Submit, genderRun, fillingTheStory, collapsedDropdown};
+function fillingTheStoryTwice(story1, story2) {
+    $(sel.story).click();
+    $$(sel.storyList)[story1].click();
+    $(sel.story).click();
+    $$(sel.storyList)[story2].click();
+    return $(sel.story).getText();
+}
+
+module.exports = {inputValues4, inputValues4Submit, genderRun, fillingTheStory, collapsedDropdown, fillingTheStoryTwice};

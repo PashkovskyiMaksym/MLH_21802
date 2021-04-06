@@ -22,7 +22,8 @@ const elements = {
     "imagePreview": ".ant-upload-list-item-thumbnail",
     "imageError": ".ant-message-notice",
     "imageUpload": ".ant-upload input",
-    "dropDownMenu": ".ant-select-open"
+    "dropDownMenu": ".ant-select-open",
+    "rebirthSign": "[aria-activedescendant~=\"story_list_1\"]"
 }
 
 module.exports = elements;

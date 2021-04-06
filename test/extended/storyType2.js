@@ -1,7 +1,7 @@
 import exp from '../../data/expected.json';
 import {story, storyTypes} from "../../data/testData";
-import {fillingTheStory, collapsedDropdown} from '../../helpers/methods';
-
+import {fillingTheStory, collapsedDropdown, fillingTheStoryTwice} from '../../helpers/methods';
+import sel from '../../data/selectors';
 describe('Story type', function () {
 
     before('Open App', function () {
@@ -82,6 +82,51 @@ describe('Story type', function () {
         it('TC - 095 The dropdown is in a collapsed way', function () {
             let dropDown = collapsedDropdown(storyTypes.comedy);
             expect(dropDown).toEqual(false);
+        });
+    });
+
+    describe('Changing the type of the story', function () {
+
+        it('TC - 096 Change the type of the story from "Comedy" to "Tragedy" ', function () {
+            let chosenStory = fillingTheStoryTwice(storyTypes.comedy, storyTypes.tragedy);
+            expect(chosenStory).toEqual(exp.tragedyLabel);
+        });
+
+        it('TC - 097 Change the type of the story from "Tragedy" to "Rags and Riches" ', function () {
+            let chosenStory = fillingTheStoryTwice(storyTypes.tragedy, storyTypes.ragsAndRiches);
+            expect(chosenStory).toEqual(exp.ragsAndRichesLabel);
+        });
+
+        it('TC - 098 Change the type of the story from "Rags and Riches" to "Journey and Return" ', function () {
+            let chosenStory = fillingTheStoryTwice(storyTypes.ragsAndRiches, storyTypes.journeyAndReturn);
+            expect(chosenStory).toEqual(exp.journeyAndReturnLabel);
+        });
+
+        it('TC - 099 Change the type of the story from "Journey and Return" to "Quest" ', function () {
+            let chosenStory = fillingTheStoryTwice(storyTypes.journeyAndReturn, storyTypes.quest);
+            expect(chosenStory).toEqual(exp.questLabel);
+        });
+
+        it('TC - 100 Change the type of the story from "Quest" to "Rebirth" ', function () {
+            let chosenStory = fillingTheStoryTwice(storyTypes.quest, storyTypes.rebirth);
+            expect(chosenStory).toEqual(exp.rebirthLabel);
+        });
+
+        it('TC - 101 Change the type of the story from "Rebirth" to "Overcoming the Monster" ', function () {
+            let chosenStory = fillingTheStoryTwice(storyTypes.rebirth, storyTypes.overcomingTheMonster);
+            expect(chosenStory).toEqual(exp.overcomingTheMonsterLabel);
+        });
+
+        it('TC - 102 Change the type of the story from "Overcoming the Monster" to "Comedy" ', function () {
+            let chosenStory = fillingTheStoryTwice(storyTypes.overcomingTheMonster, storyTypes.comedy);
+            expect(chosenStory).toEqual(exp.comedyLabel);
+        });
+
+        it('TC - 103 Story Type label is highlighted when cursor hovers on it ', function () {
+            $(sel.story).click();
+            $(sel.storyList).keys(['ArrowDown']);
+            let rebirthSign = $(sel.rebirthSign).isFocused();
+            expect(rebirthSign).toEqual(true);
         });
     });
 });
