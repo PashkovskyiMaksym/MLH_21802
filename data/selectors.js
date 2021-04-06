@@ -23,7 +23,9 @@ const elements = {
     "imageError": ".ant-message-notice",
     "imageUpload": ".ant-upload input",
     "dropDownMenu": ".ant-select-open",
-    "rebirthSign": "[aria-activedescendant~=\"story_list_1\"]"
+    "rebirthSign": "[aria-activedescendant~=\"story_list_1\"]",
+    "homePage": ".hero__form",
+    "gender": "#gender"
 }
 
 module.exports = elements;

@@ -37,6 +37,11 @@ function uploadingImage(image, element, type) {
         return $(element).isDisplayed();
     }
 }
+function inputValues5(name, gender, age, story, image){
+    inputValues4(name, gender, age, story);
+    uploadingImage(image);
+    $(sel.submit).click();
+};
 
 function genderRun(gender, button){
     $$(sel.radioButtons)[gender].click();
@@ -63,4 +68,15 @@ function fillingTheStoryTwice(story1, story2) {
     return $(sel.story).getText();
 }
 
-module.exports = {inputValues4, inputValues4Submit, genderRun, fillingTheStory, collapsedDropdown, fillingTheStoryTwice, uploadingImage};
+function refreshChecking(){
+    let names = $(sel.name).getText();
+    let ages = $(sel.age).getText();
+    let genders= $(sel.gender).isSelected();
+    let storyType = $(sel.story).isSelected();
+    let result;
+    if(names === '' && ages === '' && storyType === false && genders === false)
+        result = true;
+    return result;
+};
+
+module.exports = {inputValues4, inputValues4Submit, genderRun, fillingTheStory, collapsedDropdown, fillingTheStoryTwice, uploadingImage, inputValues5, refreshChecking};

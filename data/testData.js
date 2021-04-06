@@ -55,4 +55,8 @@ const caseType = {
     "negative": "negative"
 }
 
-module.exports = {name, gender, age, storyTypes, labels, story, images, caseType};
+const code = {
+    "refresh": "F5"
+}
+
+module.exports = {name, gender, age, storyTypes, labels, story, images, caseType, code};
