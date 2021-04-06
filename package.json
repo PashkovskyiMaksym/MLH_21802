@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio run ./wdio.conf.js"
+    "test": "npx wdio run ./wdio.conf.js",
+    "report:generate": "npx allure generate allure-results -o allure-report",
+    "report:open": "npx allure open allure-report"
   },
   "keywords": [],
   "author": "",
@@ -14,9 +16,11 @@
     "@babel/core": "^7.13.13",
     "@babel/preset-env": "^7.13.12",
     "@babel/register": "^7.13.8",
-    "@wdio/cli": "^7.2.3"
+    "@wdio/cli": "^7.2.3",
+    "allure-commandline": "^2.13.8"
   },
   "devDependencies": {
+    "@wdio/allure-reporter": "^7.3.0",
     "@wdio/dot-reporter": "^7.2.1",
     "@wdio/local-runner": "^7.2.3",
     "@wdio/mocha-framework": "^7.2.1",
