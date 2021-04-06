@@ -14,5 +14,12 @@
   "submitText": "Create!",
   "namePlaceholder": "Hero's name",
   "imagePlaceholder": "Click or drag and drop",
-  "moral": "Moral: When you quarrel amongst yourselves, someone else gains from it."
+  "moral": "Moral: When you quarrel amongst yourselves, someone else gains from it.",
+  "overcomingTheMonsterLabel": "Overcoming the Monster",
+  "rebirthLabel": "Rebirth",
+  "questLabel": "Quest",
+  "journeyAndReturnLabel": "Journey and Return",
+  "ragsAndRichesLabel": "Rags and Riches",
+  "tragedyLabel": "Tragedy",
+  "comedyLabel": "Comedy"
 }

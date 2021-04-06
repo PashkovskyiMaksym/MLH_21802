@@ -22,4 +22,16 @@ function genderRun(gender, button){
     return  $(button).isSelected();
 }
 
-module.exports = {inputValues4, inputValues4Submit, genderRun};
+function fillingTheStory(storyT){
+    $(sel.story).click();
+    $$(sel.storyList)[storyT].click();
+    return $(sel.story).getText();
+}
+
+function collapsedDropdown (storyT){
+    $(sel.story).click();
+    $$(sel.storyList)[storyT].click();
+    return $(sel.dropDownMenu).isDisplayed();
+}
+
+module.exports = {inputValues4, inputValues4Submit, genderRun, fillingTheStory, collapsedDropdown};

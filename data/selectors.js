@@ -21,7 +21,8 @@ const elements = {
     "storyTitle": "h4",
     "imagePreview": ".ant-upload-list-item-thumbnail",
     "imageError": ".ant-message-notice",
-    "imageUpload": ".ant-upload input"
+    "imageUpload": ".ant-upload input",
+    "dropDownMenu": ".ant-select-open"
 }
 
 module.exports = elements;
