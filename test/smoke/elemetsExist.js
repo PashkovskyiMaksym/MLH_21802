@@ -74,7 +74,7 @@ describe('My Little Hero', function () {
         });
 
         it('TC-011 Story field is present', function () {
-            let story = $(sel.storyType).isDisplayed();
+            let story = $(sel.story).isDisplayed();
             expect(story).toEqual(true);
         });
 

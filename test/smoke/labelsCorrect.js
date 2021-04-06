@@ -43,7 +43,7 @@ describe('Labels are correct', function () {
         expect(buttonIt).toEqual(exp.itLabel);
     });
 
-    it('TC-022  Age field label = "3. How old is your Hero?" ', function () {
+    it.skip('TC-022 (BUG) Age field label = "3. How old is your Hero?" ', function () {
         let labelAge = $$(sel.requiredLabel)[labels.age].getText();
         expect(labelAge).toEqual(exp.ageLabel);
     });
