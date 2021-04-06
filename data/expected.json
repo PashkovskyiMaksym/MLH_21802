@@ -21,6 +21,8 @@
   "journeyAndReturnLabel": "Journey and Return",
   "ragsAndRichesLabel": "Rags and Riches",
   "tragedyLabel": "Tragedy",
+  "wrongSizeImage": "Image must be smaller than 4MB!",
+  "wrongFormatImage": "You can only upload JPG/PNG file!"
   "comedyLabel": "Comedy",
   "tryAgain": "Try again!"
 }
