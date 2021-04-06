@@ -35,4 +35,15 @@ const story = {
     "moral": 1
 }
 
-module.exports = {name, gender, age, storyTypes, labels, story};
+const images = {
+    "jpeg2": '../data/photos/jpeg2Mb.jpeg'
+}
+
+const caseType = {
+    "positive": "positive",
+    "negative": "negative"
+}
+
+
+
+module.exports = {name, gender, age, storyTypes, labels, story, images, caseType};

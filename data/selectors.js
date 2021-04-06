@@ -12,11 +12,16 @@ const elements = {
     "image": "span.ant-upload",
     "submit": ".ant-btn",
     "tryAgain": ".btn-primary",
-    "errorMessage": ".ant-form-item-explain",
+    "errorMessage": "div[role='alert']",
     "storyText": ".card-text",
     "radioBtnHe": "input[type='radio'][class='ant-radio-input'][value='he']",
     "radioBtnShe": "input[type='radio'][class='ant-radio-input'][value='she']",
-    "radioBtnIt": "input[type='radio'][class='ant-radio-input'][value='it']"
+    "radioBtnIt": "input[type='radio'][class='ant-radio-input'][value='it']",
+    "imageReady" : "img",
+    "storyTitle": "h4",
+    "imagePreview": ".ant-upload-list-item-thumbnail",
+    "imageError": ".ant-message-notice",
+    "imageUpload": ".ant-upload input"
 }
 
 module.exports = elements;

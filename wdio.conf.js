@@ -6,6 +6,9 @@ exports.config = {
         './test/extended/*.js'
     ],
     exclude: [
+        './test/extended/gender.js',
+        './test/extended/image.js',
+        './test/extended/story.js',
        //'./test/smoke/elementsExist*.js',
         // './test/smoke/labelsCorrect*.js',
         //'./test/smoke/smokeFunctional*.js'
