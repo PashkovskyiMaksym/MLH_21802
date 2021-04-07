@@ -1,5 +1,16 @@
 const name = {
-    "default": "LadyBug007"
+    "default": "LadyBug007",
+    "oneSymbol": "a",
+    "symbols70": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+    "letters": "qwertyuiopasdfghjklzxcvbnm",
+    "lowUpCase": "QWEqweRTYrty",
+    "digits": "1234567890",
+    "specSymbol": "~!@#$%^&*()-_=+[]\\{}|;':\",./<>?'",
+    "lettersSpace": "qwe qwe",
+    "rusLetters": "йцукенгшщ",
+    "copyPast": "qwert12345",
+    "emptyField": "",
+   "symbol71": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
 }
 
 const gender = {
