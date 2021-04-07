@@ -84,4 +84,11 @@ function nameAccepting(name){
     return $(sel.errorMessage).isDisplayed();
 }
 
-module.exports = {inputValues4, inputValues4Submit, genderRun, fillingTheStory, collapsedDropdown, fillingTheStoryTwice, uploadingImage, inputValues5, refreshChecking, nameAccepting};
+function clearInput(input) {
+    let el = $(input).getValue();
+    for (let i = 0; i < el.length; i++)
+        $(input).keys(['Backspace']);
+    return $(sel.errorMessage).waitForDisplayed();
+}
+
+module.exports = {inputValues4, inputValues4Submit, genderRun, fillingTheStory, collapsedDropdown, fillingTheStoryTwice, uploadingImage, inputValues5, refreshChecking, nameAccepting, clearInput};

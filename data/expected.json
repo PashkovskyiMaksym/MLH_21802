@@ -24,5 +24,7 @@
   "wrongSizeImage": "Image must be smaller than 4MB!",
   "wrongFormatImage": "You can only upload JPG/PNG file!",
   "comedyLabel": "Comedy",
-  "tryAgain": "Try again!"
+  "tryAgain": "Try again!",
+  "errorMessageRequired": "Required",
+  "errorMessageName": "70 symbols max"
 }

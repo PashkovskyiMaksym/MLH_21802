@@ -1,7 +1,7 @@
 import sel from '../../data/selectors';
 import exp from '../../data/expected.json';
 import {name, gender, age, storyTypes} from '../../data/testData';
-import { inputValues4, nameAccepting} from "../../helpers/methods";
+import {clearInput, inputValues4, nameAccepting} from "../../helpers/methods";
 
 describe('Name field testing', function () {
 
@@ -63,4 +63,40 @@ describe('Name field testing', function () {
             expect(names).toEqual(false);
         });
     });
+
+    describe('Negative testing', function () {
+
+        it('TC-039a Message  appears after entering and  then deleting the input ', function () {
+            $(sel.name).setValue(name.default);
+            let message = clearInput(sel.name);
+            expect(message).toEqual(true);
+        });
+
+        it('TC-039b Message appears  after entering and  then deleting input, has text "Required" ', function () {
+            $(sel.name).setValue(name.default);
+            clearInput(sel.name);
+            let text = $(sel.errorMessage).getText();
+            expect(text).toEqual(exp.errorMessageRequired);
+        });
+
+        it('TC-040a Name Field doesn\'t accept  71 symbols" ', function () {
+            $(sel.name).setValue(name.symbol71);
+            const names = $(sel.errorMessage).waitForDisplayed();
+            expect(names).toEqual(true);
+        });
+
+        it('TC-040b Name Field doesn\'t accept  71 symbols -> "70 symbols max" message ', function () {
+            $(sel.name).setValue(name.symbol71);
+            $(sel.errorMessage).waitForDisplayed();
+            let text = $(sel.errorMessage).getText();
+            expect(text).toEqual(exp.errorMessageName);
+        });
+
+        it('TC-041 All fields are filled in except the Name field => Submit button is disabled', function () {
+            inputValues4(name.emptyField, gender.she, age.default, storyTypes.comedy);
+            let submitBtn = $(sel.submit).isEnabled();
+            expect(submitBtn).toEqual(false);
+        });
+    });
 });
+
