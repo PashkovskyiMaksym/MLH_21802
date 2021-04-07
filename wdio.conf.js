@@ -2,14 +2,14 @@ exports.config = {
     runner: 'local',
 
     specs: [
-        // './test/smoke/*.js',
-        './test/extended/*.js'
+         './test/smoke/*.js',
+         './test/extended/*.js'
     ],
     exclude: [
-        './test/extended/gender.js',
-        './test/extended/image.js',
-        './test/extended/story.js',
-       //'./test/smoke/elementsExist*.js',
+        // './test/extended/gender.js',
+        // './test/extended/image.js',
+        // './test/extended/story.js',
+        //'./test/smoke/elementsExist*.js',
         // './test/smoke/labelsCorrect*.js',
         //'./test/smoke/smokeFunctional*.js'
     ],
@@ -37,12 +37,24 @@ exports.config = {
 
     framework: 'mocha',
 
-    reporters: ['spec', 'dot'],
+    reporters: ['spec', 'dot',
+        ['allure', {
+            outputDir: 'allure-results',
+            disableWebdriverStepsReporting: true,
+            disableWebdriverScreenshotsReporting: false,
+        }],
+    ],
 
     mochaOpts: {
         require: ['@babel/register'],
         ui: 'bdd',
         timeout: 60000
     },
+
+    afterTest: function (test, context, {error, result, duration, passed, retries}) {
+        if (error) {
+            browser.takeScreenshot();
+        }
+    }
 
 }
