@@ -2,16 +2,20 @@ exports.config = {
     runner: 'local',
 
     specs: [
-         './test/smoke/*.js',
+      //   './test/smoke/*.js',
          './test/extended/*.js'
     ],
     exclude: [
-        // './test/extended/gender.js',
-        // './test/extended/image.js',
-        // './test/extended/story.js',
-        //'./test/smoke/elementsExist*.js',
-        // './test/smoke/labelsCorrect*.js',
-        //'./test/smoke/smokeFunctional*.js'
+        './test/extended/gender.js',
+        './test/extended/image.js',
+        './test/extended/image2.js',
+        './test/extended/elements.js',
+      //  './test/extended/story.js',
+        './test/extended/name.js',
+        './test/extended/storyType2.js',
+        './test/smoke/elementsExist.js',
+        './test/smoke/labelsCorrect.js',
+        './test/smoke/smokeFunctional.js'
     ],
 
     maxInstances: 10,

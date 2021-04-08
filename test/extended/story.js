@@ -13,7 +13,25 @@ describe('Story testing', function () {
         browser.refresh();
     });
 
-    describe('Placeholder', function () {
+    describe('Story elements are correct', function () {
+
+        it('TC-175 Story Title matches "Two Cats And A LadyBug007" ', function () {
+            inputValues4Submit(name.default, gender.she, age.default, storyTypes.comedy);
+            let title = $(sel.storyTitle).getText();
+            expect(title).toEqual(exp.storyTitle);
+        });
+
+        it('TC-208 Story Header = "My Little Hero" ', function () {
+            inputValues4Submit(name.default, gender.she, age.default, storyTypes.comedy);
+            const header = $(sel.header).getText();
+            expect(header).toEqual(exp.header);
+        });
+
+        it('TC-182 Story text matches the selected story type "Comedy" ', function () {
+            inputValues4Submit(name.default, gender.she, age.default, storyTypes.comedy);
+            let text = $$(sel.storyText)[story.storyBody].getText();
+            expect(text).toEqual(exp.text);
+        });
 
         it('TC-192 Moral text matches the selected story type "Comedy" ', function () {
             inputValues4Submit(name.default, gender.she, age.default, storyTypes.comedy);
