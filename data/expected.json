@@ -33,5 +33,9 @@
   "age": "1234567890",
   "he": "He",
   "she": "She",
-  "it": "It"
+  "it": "It",
+  "her": "her",
+  "his": "his",
+  "its": "its",
+  "quantityPronoun": 2
 }
