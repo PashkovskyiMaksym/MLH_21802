@@ -37,5 +37,6 @@
   "her": "her",
   "his": "his",
   "its": "its",
-  "quantityPronoun": 2
+  "quantityPronoun": 2,
+  "maxSize": 200
 }
