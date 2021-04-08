@@ -20,7 +20,8 @@ const gender = {
 }
 
 const age = {
-    "default": "1234567890"
+    "default": "1234567890",
+    "oneDigit":"1"
 }
 
 const storyTypes = {

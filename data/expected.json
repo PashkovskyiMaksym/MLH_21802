@@ -26,5 +26,12 @@
   "comedyLabel": "Comedy",
   "tryAgain": "Try again!",
   "errorMessageRequired": "Required",
-  "errorMessageName": "70 symbols max"
+  "errorMessageName": "70 symbols max",
+  "year": "year",
+  "years": "years",
+  "name": "LadyBug007",
+  "age": "1234567890",
+  "he": "He",
+  "she": "She",
+  "it": "It"
 }
