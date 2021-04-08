@@ -27,6 +27,18 @@
   "tryAgain": "Try again!",
   "errorMessageRequired": "Required",
   "errorMessageName": "70 symbols max",
+  "year": "year",
+  "years": "years",
+  "name": "LadyBug007",
+  "age": "1234567890",
+  "he": "He",
+  "she": "She",
+  "it": "It",
+  "her": "her",
+  "his": "his",
+  "its": "its",
+  "quantityPronoun": 2,
+  "maxSize": 200,
   "storyTitle": "Two Cats And A LadyBug007",
   "text": "After a feast, two cats see a piece of cake and start fighting for it.\nLadyBug007, who is 1234567890 years old, sees this as an opportunity for gain and offers to help them. Our hero divides the cake into two parts but shakes her head saying they are unequal. She takes a bite of one piece and then the other, but still finds them unequal.\nShe continues doing so until there is no more cake left. leaving the poor little cats disappointed."
 }
