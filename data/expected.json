@@ -40,5 +40,13 @@
   "quantityPronoun": 2,
   "maxSize": 200,
   "storyTitle": "Two Cats And A LadyBug007",
-  "text": "After a feast, two cats see a piece of cake and start fighting for it.\nLadyBug007, who is 1234567890 years old, sees this as an opportunity for gain and offers to help them. Our hero divides the cake into two parts but shakes her head saying they are unequal. She takes a bite of one piece and then the other, but still finds them unequal.\nShe continues doing so until there is no more cake left. leaving the poor little cats disappointed."
+  "text": "After a feast, two cats see a piece of cake and start fighting for it.\nLadyBug007, who is 1234567890 years old, sees this as an opportunity for gain and offers to help them. Our hero divides the cake into two parts but shakes her head saying they are unequal. She takes a bite of one piece and then the other, but still finds them unequal.\nShe continues doing so until there is no more cake left. leaving the poor little cats disappointed.",
+  "storyType1": "Overcoming the Monster",
+  "storyType2": "Rebirth",
+  "storyType3": "Quest",
+  "storyType4": "Journey and Return",
+  "storyType5": "Rags and Riches",
+  "storyType6": "Tragedy",
+  "storyType7": "Comedy",
+  "storyTypePlaceholder": "Type of the story"
 }

@@ -105,4 +105,9 @@ function textReformat(element){
     return result;
 }
 
-module.exports = {inputValues4, inputValues4Submit, genderRun, fillingTheStory, collapsedDropdown, fillingTheStoryTwice, uploadingImage, inputValues5, refreshChecking, nameAccepting, clearInput, textReformat};
+function storyTitle(type){
+    $(sel.story).click();
+    return $$(sel.storyList)[type].getAttribute('title');
+}
+
+module.exports = {inputValues4, inputValues4Submit, genderRun, fillingTheStory, collapsedDropdown, fillingTheStoryTwice, uploadingImage, inputValues5, refreshChecking, nameAccepting, clearInput, textReformat, storyTitle};
