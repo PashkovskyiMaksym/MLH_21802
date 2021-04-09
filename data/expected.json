@@ -14,7 +14,6 @@
   "submitText": "Create!",
   "namePlaceholder": "Hero's name",
   "imagePlaceholder": "Click or drag and drop",
-  "moral": "Moral: When you quarrel amongst yourselves, someone else gains from it.",
   "overcomingTheMonsterLabel": "Overcoming the Monster",
   "rebirthLabel": "Rebirth",
   "questLabel": "Quest",
@@ -40,5 +39,11 @@
   "quantityPronoun": 2,
   "maxSize": 200,
   "storyTitle": "Two Cats And A LadyBug007",
-  "text": "After a feast, two cats see a piece of cake and start fighting for it.\nLadyBug007, who is 1234567890 years old, sees this as an opportunity for gain and offers to help them. Our hero divides the cake into two parts but shakes her head saying they are unequal. She takes a bite of one piece and then the other, but still finds them unequal.\nShe continues doing so until there is no more cake left. leaving the poor little cats disappointed."
+  "text": "After a feast, two cats see a piece of cake and start fighting for it.\nLadyBug007, who is 1234567890 years old, sees this as an opportunity for gain and offers to help them. Our hero divides the cake into two parts but shakes her head saying they are unequal. She takes a bite of one piece and then the other, but still finds them unequal.\nShe continues doing so until there is no more cake left. leaving the poor little cats disappointed.",
+  "moral": "Moral: When you quarrel amongst yourselves, someone else gains from it.",
+  "errorMessageInvalid": "looks like unreal age",
+  "trimmed0": "23",
+  "spinUp1": "1",
+  "spinUp2": "2",
+  "spinDown4": "4"
 }

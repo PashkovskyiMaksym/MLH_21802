@@ -21,7 +21,18 @@ const gender = {
 
 const age = {
     "default": "1234567890",
-    "oneDigit":"1"
+    "oneDigit":"1",
+    "digits12":"999999999999",
+    "spaceIsTrimmed":" 123 321",
+    "zeroIsTrimmed": "023",
+    "zeroInput": "0",
+    "digits13":"9999999999999",
+    "letters":"asd",
+    "symbols":" ~!@#$%^&*()_+{}][\\|?>,< ",
+    "negative":"-23",
+    "float": "23.3453",
+    "spinDown": "5",
+    "empty": ""
 }
 
 const storyTypes = {
