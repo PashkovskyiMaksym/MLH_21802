@@ -1,5 +1,5 @@
 import exp from '../../data/expected.json';
-import {story, storyTypes} from "../../data/testData";
+import {storyTypes} from "../../data/testData";
 import {fillingTheStory, collapsedDropdown, fillingTheStoryTwice} from '../../helpers/methods';
 import sel from '../../data/selectors';
 describe('Story type', function () {
