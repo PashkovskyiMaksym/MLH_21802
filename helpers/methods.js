@@ -1,5 +1,5 @@
 import sel from '../data/selectors';
-import {storyTypes, caseType, name, gender, story} from "../data/testData";
+import {caseType, story} from "../data/testData";
 import exp from "../data/expected.json";
 const path = require('path');
 
@@ -86,8 +86,9 @@ function nameAccepting(name){
 
 function clearInput(input) {
     let el = $(input).getValue();
-    for (let i = 0; i < el.length; i++)
+    for (let i = 0; i < el.length; i++){
         $(input).keys(['Backspace']);
+    }
     return $(sel.errorMessage).waitForDisplayed();
 }
 
@@ -105,4 +106,9 @@ function textReformat(element){
     return result;
 }
 
-module.exports = {inputValues4, inputValues4Submit, genderRun, fillingTheStory, collapsedDropdown, fillingTheStoryTwice, uploadingImage, inputValues5, refreshChecking, nameAccepting, clearInput, textReformat};
+function storyTitle(type){
+    $(sel.story).click();
+    return $$(sel.storyList)[type].getAttribute('title');
+}
+
+module.exports = {inputValues4, inputValues4Submit, genderRun, fillingTheStory, collapsedDropdown, fillingTheStoryTwice, uploadingImage, inputValues5, refreshChecking, nameAccepting, clearInput, textReformat, storyTitle};

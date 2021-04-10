@@ -27,7 +27,8 @@ const elements = {
     "homePage": ".hero__form",
     "gender": "#gender",
     "spinUpAge": ".ant-input-number-handler-up",
-    "spinDownAge": ".ant-input-number-handler-down"
+    "spinDownAge": ".ant-input-number-handler-down",
+    "storyDropdown": ".ant-select-open"
 }
 
 module.exports = elements;

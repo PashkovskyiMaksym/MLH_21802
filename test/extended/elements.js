@@ -1,6 +1,6 @@
 import sel from '../../data/selectors';
 import exp from '../../data/expected.json';
-import {name, gender, age, storyTypes, images, story, code, caseType} from '../../data/testData';
+import {name, gender, age, storyTypes, images, code} from '../../data/testData';
 import {inputValues4, inputValues4Submit, inputValues5, refreshChecking} from "../../helpers/methods";
 
 describe('Story elements testing', function () {
