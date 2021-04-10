@@ -25,7 +25,7 @@ describe('Story Type', function () {
 
         it('TC - 073 The Story Type field is a dropdown and the expanded list exists ', function () {
             $(sel.story).click();
-            let dropDownMenu = $(sel.storyDropdown).isDisplayed();
+            let dropDownMenu = $(sel.dropDownMenu).isDisplayed();
             expect(dropDownMenu).toEqual(true);
         });
 

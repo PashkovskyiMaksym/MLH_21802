@@ -2,6 +2,7 @@ import exp from '../../data/expected.json';
 import {storyTypes} from "../../data/testData";
 import {fillingTheStory, collapsedDropdown, fillingTheStoryTwice} from '../../helpers/methods';
 import sel from '../../data/selectors';
+
 describe('Story type', function () {
 
     before('Open App', function () {
