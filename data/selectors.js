@@ -25,7 +25,8 @@ const elements = {
     "dropDownMenu": ".ant-select-open",
     "rebirthSign": "[aria-activedescendant~=\"story_list_1\"]",
     "homePage": ".hero__form",
-    "gender": "#gender"
+    "gender": "#gender",
+    "storyDropdown": ".ant-select-open"
 }
 
 module.exports = elements;
